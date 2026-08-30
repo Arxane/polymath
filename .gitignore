@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+
+# Virtual environment
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# Secrets / local env overrides
+.env
+
+# Trained model artifacts (large, binary, regenerable via
+# scripts/train_adapter.py and scripts/train_router.py)
+adapters/
+router/
+
+# Downloaded / generated datasets (regenerable via data/prepare_datasets.py)
+data/raw/
+data/processed/
+
+# Evaluation test sets (hand-authored fixtures, kept out of git to avoid
+# leaking benchmark answers / churn from local experimentation)
+test_data/

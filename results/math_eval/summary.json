@@ -1,0 +1,206 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B",
+  "adapter": "adapters/math",
+  "test_file": "test_data/math_test.json",
+  "num_samples": 36,
+  "device": "cuda",
+  "dtype": "bfloat16",
+  "max_new_tokens": 128,
+  "base": {
+    "accuracy": 0.2222222222222222,
+    "correct": 8,
+    "total": 36,
+    "by_category": {
+      "algebra": {
+        "accuracy": 0.5,
+        "correct": 2,
+        "total": 4
+      },
+      "arithmetic": {
+        "accuracy": 0.5,
+        "correct": 2,
+        "total": 4
+      },
+      "calculus": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 4
+      },
+      "geometry": {
+        "accuracy": 0.5,
+        "correct": 2,
+        "total": 4
+      },
+      "linear_algebra": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 4
+      },
+      "number_theory": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 4
+      },
+      "probability": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 4
+      },
+      "statistics": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 4
+      },
+      "word_problem": {
+        "accuracy": 0.5,
+        "correct": 2,
+        "total": 4
+      }
+    },
+    "by_difficulty": {
+      "easy": {
+        "accuracy": 0.4,
+        "correct": 4,
+        "total": 10
+      },
+      "hard": {
+        "accuracy": 0.0,
+        "correct": 0,
+        "total": 8
+      },
+      "medium": {
+        "accuracy": 0.2222222222222222,
+        "correct": 4,
+        "total": 18
+      }
+    }
+  },
+  "lora": {
+    "accuracy": 0.6388888888888888,
+    "correct": 23,
+    "total": 36,
+    "by_category": {
+      "algebra": {
+        "accuracy": 0.75,
+        "correct": 3,
+        "total": 4
+      },
+      "arithmetic": {
+        "accuracy": 0.75,
+        "correct": 3,
+        "total": 4
+      },
+      "calculus": {
+        "accuracy": 0.5,
+        "correct": 2,
+        "total": 4
+      },
+      "geometry": {
+        "accuracy": 1.0,
+        "correct": 4,
+        "total": 4
+      },
+      "linear_algebra": {
+        "accuracy": 0.75,
+        "correct": 3,
+        "total": 4
+      },
+      "number_theory": {
+        "accuracy": 0.25,
+        "correct": 1,
+        "total": 4
+      },
+      "probability": {
+        "accuracy": 0.5,
+        "correct": 2,
+        "total": 4
+      },
+      "statistics": {
+        "accuracy": 0.5,
+        "correct": 2,
+        "total": 4
+      },
+      "word_problem": {
+        "accuracy": 0.75,
+        "correct": 3,
+        "total": 4
+      }
+    },
+    "by_difficulty": {
+      "easy": {
+        "accuracy": 0.7,
+        "correct": 7,
+        "total": 10
+      },
+      "hard": {
+        "accuracy": 0.5,
+        "correct": 4,
+        "total": 8
+      },
+      "medium": {
+        "accuracy": 0.6666666666666666,
+        "correct": 12,
+        "total": 18
+      }
+    }
+  },
+  "overall_accuracy_delta": 0.41666666666666663,
+  "base_evaluation_seconds": 118.25841856002808,
+  "lora_evaluation_seconds": 239.28068470954895,
+  "category_comparison": {
+    "algebra": {
+      "base_accuracy": 0.5,
+      "lora_accuracy": 0.75,
+      "delta": 0.25,
+      "n": 4
+    },
+    "arithmetic": {
+      "base_accuracy": 0.5,
+      "lora_accuracy": 0.75,
+      "delta": 0.25,
+      "n": 4
+    },
+    "calculus": {
+      "base_accuracy": 0.0,
+      "lora_accuracy": 0.5,
+      "delta": 0.5,
+      "n": 4
+    },
+    "geometry": {
+      "base_accuracy": 0.5,
+      "lora_accuracy": 1.0,
+      "delta": 0.5,
+      "n": 4
+    },
+    "linear_algebra": {
+      "base_accuracy": 0.0,
+      "lora_accuracy": 0.75,
+      "delta": 0.75,
+      "n": 4
+    },
+    "number_theory": {
+      "base_accuracy": 0.0,
+      "lora_accuracy": 0.25,
+      "delta": 0.25,
+      "n": 4
+    },
+    "probability": {
+      "base_accuracy": 0.0,
+      "lora_accuracy": 0.5,
+      "delta": 0.5,
+      "n": 4
+    },
+    "statistics": {
+      "base_accuracy": 0.0,
+      "lora_accuracy": 0.5,
+      "delta": 0.5,
+      "n": 4
+    },
+    "word_problem": {
+      "base_accuracy": 0.5,
+      "lora_accuracy": 0.75,
+      "delta": 0.25,
+      "n": 4
+    }
+  }
+}
